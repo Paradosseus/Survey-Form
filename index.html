@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Video Gamer Survey</h1>
+            <p id="description">If you're a person who likes to play video games, we sincerely ask of your time to answer this survey. User data will be used only for research purposes.</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your given name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" min="10" max="99" id="number" placeholder="Age" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <p>Which video game consoles you do play the most?</p>
+
+                <label for="personal-computer">
+                <input type="checkbox" name="console" id="personal-computer" class="input-checkbox">
+                Personal Computer
+                </label>
+                <label for="playstation">
+                <input type="checkbox" name="console" id="playstation" class="input-checkbox">
+                Playstation
+                </label>
+                <label for="xbox">
+                <input type="checkbox" name="console" id="xbox" class="input-checkbox">
+                Xbox
+                </label>
+                <label for="n-switch">
+                <input type="checkbox" name="console" id="n-switch" class="input-checkbox">
+                Nintendo Switch
+                </label>
+                <label for="others-console">
+                <input type="checkbox" name="console" id="others-console" class="input-checkbox"> 
+                Others. Please specify: <input type="text" class="others-textarea">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>How many hours do you play in a week?</p>
+                <select type="" id="dropdown" name="hours" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="0-4">0-4 hours</option>
+                    <option value="4-8">4-8 hours</option>
+                    <option value="8-12">8-12 hours</option>
+                    <option value="12 plus">12 plus</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which video game genres you do play the most?</p>
+
+                <label for="casual">
+                <input type="checkbox" name="genre" id="casual" class="input-checkbox">
+                Casual
+                </label>
+                <label for="rpg">
+                <input type="checkbox" name="genre" id="rpg" class="input-checkbox">
+                Role-Playing Game (RPG)
+                </label>
+                <label for="shooting">
+                <input type="checkbox" name="genre" id="shooting" class="input-checkbox">
+                Shooting Game
+                </label>
+                <label for="online">
+                <input type="checkbox" name="genre" id="online" class="input-checkbox">
+                Online/Mulitplayer Game
+                </label>
+                <label for="horror">
+                <input type="checkbox" name="genre" id="horror" class="input-checkbox">
+                Horror
+                </label>
+                <label for="simulation">
+                <input type="checkbox" name="gnere" id="simulation" class="input-checkbox">
+                Simulation
+                </label>
+                <label for="others-genre">
+                <input type="checkbox" name="genre" id="others-genre" class="input-checkbox">
+                Others. Please specify: <input type="text" class="others-textarea">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Do you generally find video games helpful in your life?</p>
+                <label for="yes">
+                    <input type="radio" value="yes" name="helpful" class="input-radio">
+                    Yes
+                </label>
+                <label for="No">
+                    <input type="radio" value="no" name="helpful" class="input-radio">
+                    No
+                </label>
+                <label for="not-sure">
+                    <input type="radio" value="not-sure" name="helpful" class="input-radio">
+                    Not sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Do you find a video games to be a hindrance in your life?</p>
+                <label for="yes">
+                    <input type="radio" value="yes" name="hindrance" class="input-radio">
+                    Yes
+                </label>
+                <label for="no">
+                    <input type="radio" value="no" name="hindrance" class="input-radio">
+                    No
+                </label>
+                <label for="not-sure">
+                    <input type="radio" value="not-sure" name="hindrance" class="input-radio">
+                    Not sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestion?</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here.."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
